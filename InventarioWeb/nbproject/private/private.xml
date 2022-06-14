@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/Model/Categoria.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/Model/Producto.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/Vistas-Categorias/listarCategorias.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/Vistas-Categorias/crearCategoria.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/Vistas-Categorias/editarCategorias.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/WEB-INF/Vistas-Parciales/encabezado.jspf</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/Controller/Categorias.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/DAO/CategoriaDAO.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/DAO/CategoriaDAOImplementar.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/index.jsp</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/Test/Prueba.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/src/java/Factory/ConexionDB.java</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/WEB-INF/Vistas-Parciales/css-js.jspf</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/WEB-INF/Vistas-Parciales/pie.jspf</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/js/bootstrap.bundle.min.js</file>
+            <file>file:/C:/Users/ITCA/Documents/Nueva%20carpeta/InventarioWeb/web/css/estilo-base.css</file>
+        </group>
+    </open-files>
+</project-private>

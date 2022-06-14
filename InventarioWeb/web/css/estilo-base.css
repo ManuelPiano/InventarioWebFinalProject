@@ -1,0 +1,18 @@
+.encabezado{
+    background-color: #286090;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    
+}
+.contenido{
+    padding: 0px;
+    
+}
+.pie{
+    background-color: #9d9d9d;
+    color: #fff;
+    height: 36px;
+    padding: 10px;
+    text-align: center;
+}
