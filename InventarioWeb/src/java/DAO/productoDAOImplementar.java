@@ -64,7 +64,7 @@ public class productoDAOImplementar  implements ProductoDAO {
         return producto;
 
         }
-
+//-----------
     @Override
     public boolean guardarPro(Producto producto) {
         this.conn = FactoryConexionDB.open(FactoryConexionDB.MySQL);
