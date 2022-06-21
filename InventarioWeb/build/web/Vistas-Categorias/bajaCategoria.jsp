@@ -32,7 +32,7 @@
         <div class="d-grid gap-5 d-md-flex justify-content-md-center">
             <a href="bajaCategoria?respuesta=yes&&id=<%= id_cat %>" class="btn btn-primary btn-lg" role="button">Si</a>
             <!--<a href="< //request.getContextPath() >" class="btn btn-secondary btn-lg" role="button">No / Cancelar</a>-->
-            <a href="categorias?opcion=listar" class="btn btn-secondary btn-lg" role="button">No</a>
+            <a href="Categorias?opcion=listar" class="btn btn-secondary btn-lg" role="button">No</a>
             
         </div>
         
