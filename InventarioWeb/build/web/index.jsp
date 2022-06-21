@@ -15,7 +15,7 @@
     </head>
     <body>
         <%@include file = "/WEB-INF/Vistas-Parciales/encabezado.jspf" %>
-        <h3>¡Bienvenid@!</h3>
+        <h3>¡Bienvenid@s al Sistema de Inventario!</h3>
         
         <%@include file = "/WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>

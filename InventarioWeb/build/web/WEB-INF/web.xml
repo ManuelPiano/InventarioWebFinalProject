@@ -12,6 +12,10 @@
         <servlet-name>actualizoCategoria</servlet-name>
         <servlet-class>Controller.actualizoCategoria</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BajaCategoria</servlet-name>
+        <servlet-class>Controller.BajaCategoria</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index.do</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>actualizoCategoria</servlet-name>
         <url-pattern>/actualizarCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BajaCategoria</servlet-name>
+        <url-pattern>/bajaCategoria</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

@@ -94,7 +94,7 @@ protected void listaCategorias(HttpServletRequest request, HttpServletResponse r
              
          }else if(estado.equals("eliminar")){
              System.out.println("Baja de categorias...");
-             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/bajaCategorias.jsp?id="+id_cat+"&&nombre="+nombre_cat);
+             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/bajaCategoria.jsp?id="+id_cat+"&&nombre="+nombre_cat);
              dispatcher.forward(request, response);
          }else{
               

@@ -1,37 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Controller;
-
+import DAO.CategoriaDAO;
+import DAO.CategoriaDAOImplementar;
+import Model.Categoria;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author ITCA
- */
+
 public class actualizoCategoria extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        /*
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -41,43 +27,54 @@ public class actualizoCategoria extends HttpServlet {
             out.println("<h1>Servlet actualizoCategoria at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
-        }
+        }*/
     }
+    
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        
+         
+         
     }
+    
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+         //String estado = request.getParameter("opcion");
+         String id_cat = request.getParameter("id");
+         String nombre_cat = request.getParameter("nombre");
+         String estado_cat = request.getParameter("estado");
+         /*
+         System.out.println("INFORMACIÓN RECIBIDA: ");
+         System.out.println("ID Categoria: " + id_cat);
+         System.out.println("Nombre Categoria: " + nombre_cat);
+         System.out.println("Estado Categoria: " + estado_cat);
+         */
+         
+         CategoriaDAO categoria = new CategoriaDAOImplementar();
+         Categoria cat = new Categoria();
+         cat.setId_categoria(Integer.parseInt(id_cat));
+         cat.setNom_categoria(nombre_cat);
+         cat.setEstado_categoria(Integer.parseInt(estado_cat));
+         if(categoria.guardarCat(cat)){
+             //System.out.println("Registro Actualizado.");
+              RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/editarCategorias.jsp?alerta=ok");
+              dispatcher.forward(request, response);
+         }else{
+             System.out.println("Error. El registro no se pudo actualizar.");
+         }
+         
+        
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+    
     @Override
     public String getServletInfo() {
         return "Short description";
