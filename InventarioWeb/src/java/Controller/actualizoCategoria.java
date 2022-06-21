@@ -65,7 +65,7 @@ public class actualizoCategoria extends HttpServlet {
          cat.setEstado_categoria(Integer.parseInt(estado_cat));
          if(categoria.guardarCat(cat)){
              //System.out.println("Registro Actualizado.");
-              RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/editarCategorias.jsp?aviso=ok");
+              RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Vistas-Categorias/editarCategorias.jsp?alerta=ok");
               dispatcher.forward(request, response);
          }else{
              System.out.println("Error. El registro no se pudo actualizar.");
